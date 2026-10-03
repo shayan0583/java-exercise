@@ -1,4 +1,3 @@
-import com.sun.istack.internal.NotNull;
 
 public class Question {
     private String questiontext;
@@ -11,7 +10,7 @@ public class Question {
     public void display(){
      System.out.println("Question = "+ questiontext);
     }
-    public boolean checkanswer(@NotNull String useranswer){
+    public boolean checkanswer(String useranswer){
         if (useranswer.equals(correctanswer)){
             return true;
         }
